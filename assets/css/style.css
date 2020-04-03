@@ -1,0 +1,93 @@
+body,html
+{
+  margin: 0;
+  padding:0;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+
+  --blau: rgb(57, 146, 241) ;
+  --sky-blue:#69F3FB ;
+  --yellow:rgb(255, 242, 60);
+  --green:#67da67;
+  --crimson:#F9499E;
+  --orange:#ffa500;
+}
+.box
+{
+  border-style: outset ;
+}
+section
+{
+ 
+  position: absolute;
+  left: 60%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 60%; 
+  display: grid;
+  grid-template-columns:repeat(7, 10%) ;
+  grid-template-rows:repeat(12, 8.3%) 
+
+}
+
+/* Blau */
+.blau 
+{
+  background-color: var(--blau);
+  border-radius: 0px;
+  background: linear-gradient(145deg, #0000e6, #0000ff);
+  box-shadow:  1px 1px 0px #0000fc, 
+               -1px -1px 0px #0000ff;
+}
+
+/* Sky-Blue */
+.sky
+{
+  background-color: var(--sky-blue);
+  border-radius: 0px;
+  background: linear-gradient(145deg, #00e6e6, #00ffff);
+  box-shadow:  1px 1px 0px #00fcfc, 
+           -1px -1px 0px #00ffff;
+}
+
+/* Yellow */
+.yellow
+{
+  background-color: var(--yellow);
+  border-radius: 0px;
+  background: linear-gradient(145deg, #e6e600, #ffff00);
+  box-shadow:  1px 1px 0px #fcfc00, 
+           -1px -1px 0px #ffff00;
+
+}
+
+/* Crimson */
+.crimson
+{
+  background-color: var(--crimson);
+  border-radius: 0px;
+  background: linear-gradient(145deg, #c51236, #ea1540);
+  box-shadow:  1px 1px 0px #d9143b, 
+           -1px -1px 0px #dd143d;
+}
+
+/* Green */
+.green
+{
+  background-color: var(--green);
+  border-radius: 0px;
+  background: linear-gradient(145deg, #5dc45d, #6ee96e);
+  box-shadow:  1px 1px 0px #66d866, 
+           -1px -1px 0px #68dc68;
+}
+/* Orange */
+.orange
+{
+  background-color: var(--orange);
+  border-radius: 0px;
+  background: linear-gradient(145deg, #e69500, #ffb100);
+  box-shadow:  1px 1px 0px #fca300, 
+           -1px -1px 0px #ffa700;
+}
